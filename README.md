@@ -7,7 +7,7 @@ And this is the SuperDuo assignment.
 
 ## Description
 
-This projct productionizes two apps, taking them from a semi-functional state to a production-ready state.
+This project productionizes two apps, taking them from a semi-functional state to a production-ready state.
 
 
 * **Alexandria** is a book list and barcode scanner app.
@@ -31,18 +31,7 @@ This projct productionizes two apps, taking them from a semi-functional state to
 
 This app uses a API and data from [GoogleApis.com](https://www.googleapis.com/books/v1/volumes?) to retrieve ISBN book data.
 
-## Alexandria Screenshots
-
-![screen](../master/Alexandria/screens/phone-screenshot1.png)
-
-![screen](../master/Alexandria/screens/phone-screenshot2.png)
-
-![screen](../master/Alexandria/screens/tablet-screenshot1.png)
-
-![screen](../master/Alexandria/screens/tablet-screenshot2.png)
-
-![screen](../master/Alexandria/screens/tablet-screenshot3.png)
-
+---
 
 * **Football Scores** is an app to track recent and upcoming football (soccer) matches.
 
@@ -65,6 +54,24 @@ This app uses a API and data from [GoogleApis.com](https://www.googleapis.com/bo
 
 This app uses API and data from [Football-Data.org](https://www.football-data.org) to retrieve game data.
 You need to provide your own API key in order to run the app.  Place your API key into the 'api_key' section of values/strings.xml
+
+---
+SCREENSHOTS
+---
+
+## Alexandria Screenshots
+
+![screen](../master/Alexandria/screens/phone-screenshot1.png)
+
+![screen](../master/Alexandria/screens/phone-screenshot2.png)
+
+![screen](../master/Alexandria/screens/tablet-screenshot1.png)
+
+![screen](../master/Alexandria/screens/tablet-screenshot2.png)
+
+![screen](../master/Alexandria/screens/tablet-screenshot3.png)
+
+---
 
 ## Football Scores Screenshots
 
