@@ -10,9 +10,11 @@ And this is the SuperDuo assignment.
 This project productionizes two apps, taking them from a semi-functional state to a production-ready state.
 
 
+## Alexandria
+
 * **Alexandria** is a book list and barcode scanner app.
 
-## Features
+## Alexandria Features
 
  * Integrated barcode scanning functionality (using ZXing or ZBar libraries)
  * Image and HTML caching
@@ -33,9 +35,11 @@ This app uses a API and data from [GoogleApis.com](https://www.googleapis.com/bo
 
 ---
 
+## Football Scores
+
 * **Football Scores** is an app to track recent and upcoming football (soccer) matches.
 
-## Features
+## Football Scores Features
 
  * Collection Widget
  * HTML caching
