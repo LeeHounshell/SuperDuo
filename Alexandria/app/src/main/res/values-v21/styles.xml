@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:toolbarStyle">@style/Toolbar</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/navigation_bar</item>
+    </style>
+
+    <style name="AppTheme.Main" parent="AppTheme">
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="AppTheme.Detail" parent="AppTheme">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowEnterTransition">@transition/details_window_enter_transition</item>
+        <item name="android:windowReturnTransition">@transition/details_window_return_transition</item>
+    </style>
+
+</resources>

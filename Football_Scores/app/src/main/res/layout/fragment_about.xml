@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/fragment_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity$PlaceholderFragment">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:contentDescription="@string/empty"
+        android:scaleType="fitCenter"
+        android:src="@drawable/about_football" />
+
+    <TextView
+        style="@style/about_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/football_about"
+        android:text="@string/about_text" />
+
+</RelativeLayout>

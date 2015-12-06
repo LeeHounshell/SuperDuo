@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- number of lines for text -->
+    <integer name="ean_lines">1</integer>
+    <integer name="full_sub_title_lines">5</integer>
+    <integer name="list_lines">1</integer>
+    <integer name="sub_title_lines">3</integer>
+    <integer name="title_lines">1</integer>
+
+    <!-- length, width and height sizes -->
+    <integer name="max_ean_length">13</integer>
+    <integer name="max_search_length">80</integer>
+    <integer name="min_ean_width">13</integer>
+    <integer name="min_search_width">40</integer>
+
+    <dimen name="button_height">70dp</dimen>
+    <dimen name="button_width">70dp</dimen>
+    <dimen name="circle_view_width_and_height">40dp</dimen>
+    <dimen name="header_height">44dp</dimen>
+    <dimen name="layout_header_height">120dp</dimen>
+    <dimen name="min_height">10dp</dimen>
+    <dimen name="min_width">10dp</dimen>
+    <dimen name="sub_title_height">15dp</dimen>
+
+    <!-- font sizes -->
+    <dimen name="headline_fontsize">20sp</dimen>
+    <dimen name="large_fontsize">17sp</dimen>
+    <dimen name="medium_fontsize">13sp</dimen>
+    <dimen name="small_fontsize">10sp</dimen>
+    <dimen name="sub_headline_fontsize">15sp</dimen>
+    <dimen name="title_fontsize">12sp</dimen>
+
+    <!-- padding sizes -->
+    <dimen name="book_padding">10dp</dimen>
+    <dimen name="book_padding_top">30dp</dimen>
+    <dimen name="button_padding">10dp</dimen>
+    <dimen name="list_padding">5dp</dimen>
+    <dimen name="no_padding">0dp</dimen>
+    <dimen name="padding">7dp</dimen>
+
+    <!-- margin sizes -->
+    <dimen name="book_margin">7dp</dimen>
+    <dimen name="button_margin">5dp</dimen>
+    <dimen name="button_margin_top">30dp</dimen>
+    <dimen name="large_margin_start">55dp</dimen>
+    <dimen name="list_margin">5dp</dimen>
+    <dimen name="margin">9dp</dimen>
+    <dimen name="margin_normal">12dp</dimen>
+    <dimen name="margin_start">10dp</dimen>
+    <dimen name="margin_top">15dp</dimen>
+    <dimen name="no_margin">0dp</dimen>
+    <dimen name="text_margin">20dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="appbar_elevation">4dp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Football Scores</string>
+
+    <!-- misc -->
+    <string name="title_activity_about">About</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="share_text">Share</string>
+    <string name="empty"> </string>
+    <string name="future">no score</string>
+    <string name="football_separator"> - </string>
+    <string name="vs">vs.</string>
+    <string name="colon">:</string>
+
+    <!-- content descriptions -->
+    <string name="football_league">the league</string>
+    <string name="football_matchday">the match day</string>
+    <string name="football_share">share this match</string>
+    <string name="football_about">about this app</string>
+    <string name="football_scores_list">the scores list</string>
+    <string name="football_pager_tabs">the tab pages</string>
+    <string name="football_home_crest">the home crest</string>
+    <string name="football_home_team">the home team name</string>
+    <string name="football_score">the score</string>
+    <string name="football_data">game information</string>
+    <string name="football_away_crest">the away crest</string>
+    <string name="football_away_team">the away team name</string>
+    <string name="football_toolbar">the toolbar</string>
+
+    <!-- football leagues -->
+    <string name="football_seria_a">Serie A</string>
+    <string name="football_premier_league">Premier League</string>
+    <string name="football_champions_league">UEFA Champions League</string>
+    <string name="football_primera_division">First Division</string>
+    <string name="football_segunda_division">Second Division</string>
+    <string name="football_bundesliga">Bundesliga</string>
+    <string name="football_ligue_1">League 1</string>
+    <string name="football_ligue_2">League 2</string>
+    <string name="football_eredivisie">Eredivisie</string>
+    <string name="football_unknown">Unknown League: #</string>
+
+    <!-- football matchday -->
+    <string name="football_stages_6">Group Stages, Matchday : 6</string>
+    <string name="football_first_knockout">First Knockout Round</string>
+    <string name="football_knockout">Knockout Round</string>
+    <string name="football_quarterfinal">Quarter Final</string>
+    <string name="football_semifinal">Semi Final</string>
+    <string name="football_final">Final</string>
+    <string name="football_show_matchday">Match Day: </string>
+
+    <!-- team names -->
+    <string name="football_arsenal_london">Arsenal London FC</string>
+    <string name="football_manchester_united">Manchester United FC</string>
+    <string name="football_swansea_city">Swansea City</string>
+    <string name="football_leicester_city">Leicester City</string>
+    <string name="football_everton">Everton FC</string>
+    <string name="football_west_ham_united">West Ham United FC</string>
+    <string name="football_tottenham_hotspur">Tottenham Hotspur FC"</string>
+    <string name="football_west_bromwich_albion">West Bromwich Albion</string>
+    <string name="football_sunderland">Sunderland AFC</string>
+    <string name="football_stoke_city">Stoke City FC</string>
+    <string name="football_aston_villa">Aston Villa</string>
+    <string name="football_burney">Burney FC</string>
+    <string name="football_chelsea">Chelsea</string>
+    <string name="football_crystal_palace">Crystal Palace</string>
+    <string name="football_hull_city">Hull City AFC</string>
+    <string name="football_liverpool">Liverpool</string>
+    <string name="football_manchester_city">Manchester City</string>
+    <string name="football_newcastle_united">Newcastle United</string>
+    <string name="football_queens_park_rangers">Queens Park Rangers</string>
+    <string name="football_southampton">Southampton FC</string>
+
+    <string name="about_text">
+        This Application gets Football Match Scores for the Premier League, Seria A, Bundesliga, Primera Division
+        and the Uefa Champions League.
+        All Match data are acquired from the football-data.org free API.
+        All team Logos are acquired from http://hdlogo.wordpress.com/ upon requesting permission from the owner.
+        The original version of this app was created by Yahia Khalid Ibn El Walid Ahmed, and a modified version is given to students in the Udacity Android Nanodegree program.
+        During the off season, fake data will be added to the app.
+        This version of "Football Scores" was modified by Lee Hounshell to include a Collection Widget, Html Caching, CardView, Material Design,
+        Localization, Accessibility, AppCompat Integration, Styling, Layout Mirroring, Toolbar, Lint-Free code, Deprecation-Fixes and Bug-Fixes.
+    </string>
+
+    <string name="widget_text">Football Scores</string>
+    <string name="api_key" translatable="false"> PLACE YOUR API-KEY HERE </string>
+
+    <string name="dummy_data" translatable="false">{\"timeFrameStart\":\"2015&#8211;06&#8211;18\",\"timeFrameEnd\":\"2015&#8211;06&#8211;19\",\"count\":1,\"fixtures\":[{\"_links\":{\"self\":{\"href\":\"http://api.football&#8211;data.org/alpha/fixtures/140514\"},\"soccerseason\":{\"href\":\"http://api.football&#8211;data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football&#8211;data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football&#8211;data.org/alpha/teams/263\"}},\"date\":\"2015&#8211;06&#8211;19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"TESTING1\",\"awayTeamName\":\"TESTING2\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}},{\"_links\":{\"self\":{\"href\":\"http://api.football&#8211;data.org/alpha/fixtures/140514\"},\"soccerseason\":{\"href\":\"http://api.football&#8211;data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football&#8211;data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football&#8211;data.org/alpha/teams/263\"}},\"date\":\"2015&#8211;06&#8211;19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"TESTING1\",\"awayTeamName\":\"TESTING2\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}},{\"_links\":{\"self\":{\"href\":\"http://api.football&#8211;data.org/alpha/fixtures/140514\"},\"soccerseason\":{\"href\":\"http://api.football&#8211;data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football&#8211;data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football&#8211;data.org/alpha/teams/263\"}},\"date\":\"2015&#8211;06&#8211;19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"TESTING1\",\"awayTeamName\":\"TESTING2\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}},{\"_links\":{\"self\":{\"href\":\"http://api.football&#8211;data.org/alpha/fixtures/140514\"},\"soccerseason\":{\"href\":\"http://api.football&#8211;data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football&#8211;data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football&#8211;data.org/alpha/teams/263\"}},\"date\":\"2015&#8211;06&#8211;19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"TESTING1\",\"awayTeamName\":\"TESTING2\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}},{\"_links\":{\"self\":{\"href\":\"http://api.football&#8211;data.org/alpha/fixtures/140514\"},\"soccerseason\":{\"href\":\"http://api.football&#8211;data.org/alpha/soccerseasons/357\"},\"homeTeam\":{\"href\":\"http://api.football&#8211;data.org/alpha/teams/275\"},\"awayTeam\":{\"href\":\"http://api.football&#8211;data.org/alpha/teams/263\"}},\"date\":\"2015&#8211;06&#8211;19T22:00:00Z\",\"status\":\"FINISHED\",\"matchday\":42,\"homeTeamName\":\"TESTING1\",\"awayTeamName\":\"TESTING2\",\"result\":{\"goalsHomeTeam\":2,\"goalsAwayTeam\":4}}]}</string>
+
+</resources>

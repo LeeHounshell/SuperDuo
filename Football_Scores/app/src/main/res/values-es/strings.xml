@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Resultados de Fútbol</string>
+
+    <!-- misc -->
+    <string name="title_activity_about">Acerca de</string>
+    <string name="today">Este Dia</string>
+    <string name="yesterday">Ayer</string>
+    <string name="tomorrow">Mañana</string>
+    <string name="share_text">Compartir</string>
+    <string name="empty"> </string>
+    <string name="future">sin resultados</string>
+    <string name="football_separator"> - </string>
+    <string name="vs">vs.</string>
+    <string name="colon">:</string>
+
+    <!-- content descriptions -->
+    <string name="football_league">la Liga</string>
+    <string name="football_matchday">el día del partido</string>
+    <string name="football_share">compartir este partido</string>
+    <string name="football_about">acerca de esta aplicación</string>
+    <string name="football_scores_list">la lista de las puntuacioes</string>
+    <string name="football_pager_tabs">las páginas de ficha</string>
+    <string name="football_home_crest">la cresta casa</string>
+    <string name="football_home_team">el nombre de equipo local</string>
+    <string name="football_score">el marcador</string>
+    <string name="football_data">información del juego</string>
+    <string name="football_away_crest">la cresta de distancia</string>
+    <string name="football_away_team">el nombre de equipo visitante</string>
+    <string name="football_toolbar">la barra de herramientas</string>
+
+    <!-- football leagues -->
+    <string name="football_seria_a">Seria A</string>
+    <string name="football_premier_league">Premier League</string>
+    <string name="football_champions_league">UEFA Liga de Campeones</string>
+    <string name="football_primera_division">Primera Division</string>
+    <string name="football_segunda_division">Segunda Division</string>
+    <string name="football_bundesliga">Bundesliga</string>
+    <string name="football_ligue_1">Ligue 1</string>
+    <string name="football_ligue_2">Ligue 2</string>
+    <string name="football_eredivisie">Eredivisie</string>
+    <string name="football_unknown">Desconocido Ligue: #</string>
+
+    <!-- football matchday -->
+    <string name="football_stages_6">Fase de grupos, Jornada : 6</string>
+    <string name="football_first_knockout">Primero octavos de final</string>
+    <string name="football_knockout">Octavos de final</string>
+    <string name="football_quarterfinal">Cuartos de final</string>
+    <string name="football_semifinal">Semifinal</string>
+    <string name="football_final">Final</string>
+    <string name="football_show_matchday">Día del partido: </string>
+
+    <!-- team names -->
+    <string name="football_arsenal_london">Arsenal London FC</string>
+    <string name="football_manchester_united">Manchester United FC</string>
+    <string name="football_swansea_city">Swansea City</string>
+    <string name="football_leicester_city">Leicester City</string>
+    <string name="football_everton">Everton FC</string>
+    <string name="football_west_ham_united">West Ham United FC</string>
+    <string name="football_tottenham_hotspur">Tottenham Hotspur FC"</string>
+    <string name="football_west_bromwich_albion">West Bromwich Albion</string>
+    <string name="football_sunderland">Sunderland AFC</string>
+    <string name="football_stoke_city">Stoke City FC</string>
+    <string name="football_aston_villa">Aston Villa</string>
+    <string name="football_burney">Burney FC</string>
+    <string name="football_chelsea">Chelsea</string>
+    <string name="football_crystal_palace">Crystal Palace</string>
+    <string name="football_hull_city">Hull City AFC</string>
+    <string name="football_liverpool">Liverpool</string>
+    <string name="football_manchester_city">Manchester City</string>
+    <string name="football_newcastle_united">Newcastle United</string>
+    <string name="football_queens_park_rangers">Queens Park Rangers</string>
+    <string name="football_southampton">Southampton FC</string>
+
+    <string name="about_text">
+         Esta aplicación obtiene Fútbol Decenas de partido de la Premier League, Serie A, Bundesliga, Liga BBVA
+         y de la Liga de Campeones de la UEFA.
+         Todos los datos del partido se adquieren desde la API gratuita football-data.org.
+         Todos los logotipos de los equipos son adquiridos de http://hdlogo.wordpress.com/ al solicitar el permiso del propietario.
+         La versión original de esta aplicación fue creada por Yahia Khalid Ibn El Walid Ahmed, y una versión modificada se da a los estudiantes en el programa Udacity Android Nanodegree.
+         Durante la temporada baja, se añadirán los datos falsos para la aplicación.
+         Esta versión de "Resultados de Fútbol" fue modificada por Lee Hounshell incluir un widget Collection, Html Caching, CardView, Diseño de materiales,
+         Localización, Accesibilidad, AppCompat Integración, Estilo, diseño Mirroring, barra de herramientas, código de Lint-gratuito, Deprecation-Correcciones y correcciones de errores.
+    </string>
+
+    <string name="widget_text">Resultados de Fútbol</string>
+
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- see: http://www.android4devs.com/2014/12/how-to-make-material-design-app.html -->
+
+    <style name="AppTheme.Base" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:windowBackground">@color/primary_dark</item>
+    </style>
+
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="toolbarStyle">@style/toolbar_style</item>
+    </style>
+
+    <style name="SettingsTheme" parent="AppTheme" />
+
+    <style name="toolbar_style" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/primary</item>
+        <item name="popupTheme">@style/Theme.AppCompat</item>
+    </style>
+
+    <style name="widget_layout_style" parent="AppTheme">
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:background">@drawable/widget_shape</item>
+    </style>
+
+    <style name="widget_text_style" parent="widget_layout_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_margin">4dip</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="card_view_style" parent="AppTheme">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/list_item</item>
+    </style>
+
+    <style name="card_layout_style" parent="card_view_style">
+        <item name="android:baselineAligned">false</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@color/primary</item>
+    </style>
+
+    <style name="card_crest_style" parent="card_layout_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+
+    <style name="card_name_style" parent="card_layout_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/team_names_size</item>
+    </style>
+
+    <style name="card_score_style" parent="card_layout_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/score_size</item>
+        <item name="android:layout_marginTop">@dimen/score_top_bottom_margin</item>
+        <item name="android:layout_marginBottom">@dimen/score_top_bottom_margin</item>
+    </style>
+
+    <style name="card_data_style" parent="card_layout_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">@dimen/time_size</item>
+    </style>
+
+    <style name="detail_style" parent="card_layout_style">
+        <item name="android:background">@color/sharebar_dark</item>
+    </style>
+
+    <style name="league_style" parent="detail_style">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/league_size</item>
+    </style>
+
+    <style name="matchday_style" parent="detail_style">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/matchday_size</item>
+    </style>
+
+    <style name="activity_style" parent="AppTheme">
+        <item name="android:background">@color/primary</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <style name="frame_style" parent="AppTheme">
+        <item name="android:background">@color/primary_dark</item>
+    </style>
+
+    <style name="fragment_style" parent="AppTheme">
+        <item name="android:background">@color/primary_dark</item>
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+        <item name="android:layout_marginLeft">@dimen/list_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/list_horizontal_margin</item>
+    </style>
+
+    <style name="about_style" parent="AppTheme" >
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">@dimen/about_text</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="pager_style" parent="AppTheme">
+        <item name="android:layout_gravity">top</item>
+        <item name="android:background">@color/accent</item>
+        <item name="android:paddingBottom">@dimen/pager_padding</item>
+        <item name="android:paddingTop">@dimen/pager_padding</item>
+    </style>
+
+    <style name="scores_list_style" parent="AppTheme">
+        <item name="android:divider">@android:color/transparent</item>t
+        <item name="android:dividerHeight">@dimen/scores_list_divider_height</item>
+    </style>
+
+    <style name="share_button_style" parent="AppTheme">
+        <item name="android:layout_gravity">end</item>
+        <item name="android:gravity">end</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_margin">@dimen/share_button_margin</item>
+        <item name="android:textColor">@color/secondary_text</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:drawableRight">@android:drawable/ic_menu_share</item>
+    </style>
+
+</resources>

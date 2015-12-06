@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    style="@style/book_list_layout_style">
+
+    <ImageView
+        android:id="@+id/fullBookCover"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        style="@style/book_list_cover_style"
+        android:contentDescription="@string/book_cover"
+        android:src="@drawable/book_placeholder" />
+
+    <TextView
+        android:id="@+id/listBookTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/book_list_title_style"
+        android:layout_toEndOf="@id/fullBookCover"
+        android:layout_toRightOf="@id/fullBookCover"
+        android:contentDescription="@string/book_title" />
+
+    <TextView
+        android:id="@+id/listBookSubTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sub_title_height"
+        style="@style/book_list_sub_title_style"
+        android:layout_toEndOf="@+id/fullBookCover"
+        android:layout_toRightOf="@+id/fullBookCover"
+        android:contentDescription="@string/book_sub_title" />
+
+</RelativeLayout>

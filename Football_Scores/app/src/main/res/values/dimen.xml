@@ -1,0 +1,17 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="list_horizontal_margin">2dp</dimen>
+    <dimen name="share_button_margin">150dp</dimen>
+    <dimen name="team_names_size">17sp</dimen>
+    <dimen name="score_size">25sp</dimen>
+    <dimen name="score_top_bottom_margin">10dp</dimen>
+    <dimen name="time_size">25sp</dimen>
+    <dimen name="league_size">15sp</dimen>
+    <dimen name="matchday_size">15sp</dimen>
+    <dimen name="about_text">17sp</dimen>
+    <dimen name="scores_list_divider_height">15sp</dimen>
+    <dimen name="appbar_elevation">4dp</dimen>
+    <dimen name="pager_padding">4dp</dimen>
+</resources>

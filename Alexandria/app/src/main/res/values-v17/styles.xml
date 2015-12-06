@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- see: http://www.android4devs.com/2014/12/how-to-make-material-design-app.html -->
+    <style name="AppTheme.Base" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:windowBackground">@color/primary_dark</item>
+        <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="toolbarStyle">@style/Toolbar</item>
+    </style>
+
+    <style name="SettingsTheme" parent="AppTheme" />
+
+    <style name="AppTheme.Main" parent="AppTheme" />
+
+    <style name="AppTheme.Detail" parent="AppTheme" />
+
+    <style name="Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="popupTheme">@style/Theme.AppCompat.Light</item>
+    </style>
+
+    <style name="book_list_title_style" parent="book_list_layout_style" >
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignWithParentIfMissing">true</item>
+        <item name="android:layout_marginEnd">@dimen/book_margin</item>
+        <item name="android:layout_marginRight">@dimen/book_margin</item>
+        <item name="android:layout_toEndOf">@id/fullBookCover</item>
+        <item name="android:layout_toRightOf">@id/fullBookCover</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">@integer/title_lines</item>
+        <item name="android:textSize">@dimen/title_fontsize</item>
+    </style>
+
+    <style name="book_list_sub_title_style" parent="book_list_layout_style" >
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginEnd">@dimen/book_margin</item>
+        <item name="android:layout_marginRight">@dimen/book_margin</item>
+        <item name="android:textColor">@color/secondary_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">@integer/title_lines</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/small_fontsize</item>
+    </style>
+
+    <style name="book_list_cover_style" parent="book_list_layout_style" >
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginEnd">@dimen/list_margin</item>
+        <item name="android:layout_marginRight">@dimen/list_margin</item>
+    </style>
+
+    <style name="add_book_layout_style" parent="AppTheme" >
+        <item name="android:layout_gravity">center_horizontal|top|start</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:layout_marginStart">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:layout_marginEnd">@dimen/margin</item>
+    </style>
+
+    <style name="add_book_text_input_style" parent="add_book_layout_style" >
+        <item name="android:layout_marginLeft">@dimen/margin_start</item>
+        <item name="android:layout_marginRight">@dimen/margin_start</item>
+        <item name="android:layout_marginStart">@dimen/button_margin</item>
+        <item name="android:layout_marginEnd">@dimen/button_margin</item>
+        <item name="android:layout_marginTop">@dimen/button_margin_top</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="fullbook_title_style" parent="fullbook_layout_style" >
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_margin">@dimen/book_margin</item>
+        <item name="android:paddingTop">@dimen/book_padding_top</item>
+        <item name="android:paddingEnd">@dimen/book_padding</item>
+        <item name="android:paddingRight">@dimen/book_padding</item>
+        <item name="android:paddingStart">@dimen/book_padding</item>
+        <item name="android:textIsSelectable">true</item>
+        <item name="android:textSize">@dimen/headline_fontsize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="add_book_title_style" parent="add_book_layout_style" >
+        <item name="android:layout_marginLeft">@dimen/margin_start</item>
+        <item name="android:layout_marginStart">@dimen/margin_start</item>
+        <item name="android:layout_marginTop">@dimen/margin_top</item>
+        <item name="android:paddingEnd">@dimen/book_padding</item>
+        <item name="android:paddingRight">@dimen/book_padding</item>
+        <item name="android:paddingStart">@dimen/book_padding</item>
+        <item name="android:textIsSelectable">true</item>
+        <item name="android:textSize">@dimen/headline_fontsize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="fullbook_sub_title_style" parent="fullbook_layout_style" >
+        <item name="android:paddingRight">@dimen/book_padding</item>
+        <item name="android:paddingLeft">@dimen/book_padding</item>
+        <item name="android:paddingStart">@dimen/book_padding</item>
+        <item name="android:paddingEnd">@dimen/book_padding</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">@integer/full_sub_title_lines</item>
+        <item name="android:textSize">@dimen/sub_headline_fontsize</item>
+    </style>
+
+    <style name="add_book_sub_title_style" parent="add_book_title_style" >
+        <item name="android:layout_marginLeft">@dimen/margin_start</item>
+        <item name="android:layout_marginStart">@dimen/margin_start</item>
+        <item name="android:layout_marginTop">@dimen/book_margin</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">@integer/sub_title_lines</item>
+        <item name="android:textSize">@dimen/medium_fontsize</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="add_book_cover_style" parent="add_book_layout_style" >
+        <item name="android:layout_marginLeft">@dimen/margin_start</item>
+        <item name="android:layout_marginStart">@dimen/margin_start</item>
+        <item name="android:layout_marginTop">@dimen/book_margin</item>
+        <item name="android:minHeight">@dimen/min_height</item>
+        <item name="android:minWidth">@dimen/min_width</item>
+    </style>
+
+    <style name="add_book_author_category_style" parent="add_book_layout_style" >
+        <item name="android:layout_gravity">end</item>
+        <item name="android:layout_marginLeft">@dimen/large_margin_start</item>
+        <item name="android:layout_marginStart">@dimen/large_margin_start</item>
+        <item name="android:layout_marginTop">@dimen/book_margin</item>
+        <item name="android:gravity">end</item>
+        <item name="android:textSize">@dimen/small_fontsize</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="fullbook_desc_style" parent="fullbook_layout_style" >
+        <item name="android:layout_marginTop">@dimen/margin_top</item>
+        <item name="android:layout_marginLeft">@dimen/book_margin</item>
+        <item name="android:layout_marginStart">@dimen/book_margin</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="add_book_desc_style" parent="add_book_layout_style" >
+        <item name="android:layout_marginLeft">@dimen/margin_start</item>
+        <item name="android:layout_marginStart">@dimen/margin_start</item>
+        <item name="android:layout_marginTop">@dimen/book_margin</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">@dimen/small_fontsize</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="add_book_buttons_style" parent="add_book_layout_style" >
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textSize">@dimen/small_fontsize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="frag_list_recycler_view_style" parent="frag_list_rel_layout_style" >
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_below">@+id/searchLayout</item>
+        <item name="android:layout_marginLeft">@dimen/no_margin</item>
+        <item name="android:layout_marginStart">@dimen/no_margin</item>
+    </style>
+
+    <style name="header_layout_style" parent="header_style" >
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+
+    <style name="header_info1_style" parent="header_layout_style" >
+        <item name="android:layout_marginStart">@dimen/margin_normal</item>
+        <item name="android:layout_marginLeft">@dimen/margin_normal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/small_fontsize</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="header_info2_style" parent="header_layout_style" >
+        <item name="android:layout_marginStart">@dimen/margin_normal</item>
+        <item name="android:layout_marginLeft">@dimen/margin_normal</item>
+        <item name="android:layout_marginTop">@dimen/list_margin</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/small_fontsize</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="header_circleview_style" parent="header_style" >
+        <item name="android:layout_marginLeft">@dimen/margin_normal</item>
+        <item name="android:layout_marginStart">@dimen/margin_normal</item>
+        <item name="android:layout_marginTop">@dimen/margin_top</item>
+    </style>
+
+    <style name="navigation_list_icon_style" parent="navigation_list_layout_style" >
+        <item name="android:layout_marginEnd">@dimen/list_margin</item>
+        <item name="android:layout_marginRight">@dimen/list_margin</item>
+    </style>
+
+    <style name="navigation_list_item_style" parent="navigation_list_layout_style" >
+        <item name="android:layout_marginEnd">@dimen/book_margin</item>
+        <item name="android:layout_marginRight">@dimen/book_margin</item>
+        <item name="android:layout_marginTop">@dimen/book_margin</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">start</item>
+        <item name="android:maxLines">@integer/list_lines</item>
+        <item name="android:textSize">@dimen/title_fontsize</item>
+    </style>
+
+</resources>

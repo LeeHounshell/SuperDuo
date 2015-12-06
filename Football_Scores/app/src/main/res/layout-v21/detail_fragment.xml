@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/details_fragment_container"
+    style="@style/detail_style"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/league_textview"
+            style="@style/league_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/football_league"
+            android:text="@string/empty" />
+
+        <TextView
+            android:id="@+id/matchday_textview"
+            style="@style/matchday_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/football_matchday"
+            android:text="@string/empty" />
+
+        <Button
+            android:id="@+id/share_button"
+            style="@style/share_button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/football_share"
+            android:text="@string/share_text" />
+
+    </LinearLayout>
+
+</LinearLayout>

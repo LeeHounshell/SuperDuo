@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Alejandría</string>
+    <string name="app_fullname">Alexandria Book Manager</string>
+    <string name="app_info">Programa Udacity Android Nanodegree</string>
+
+    <string name="navigation_drawer_open">Abra el cajón de navegación</string>
+    <string name="navigation_drawer_close">Cerrar cajón de navegación</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="input_hint">Introduzca ISBN-10 o ISBN-13. Dígitos solamente.</string>
+    <string name="search_hint">Búsqueda de un libro por su nombre.</string>
+    <string name="navigation_icon">Menú Icono</string>
+    <string name="navigation_item">Elemento del menú</string>
+    <string name="searching">Buscando..</string>
+    <string name="not_found">Ningún Libro Encontró</string>
+    <string name="ok_button">OK</string>
+    <string name="cancel_button">Cancelar</string>
+    <string name="good_button">Bien</string>
+    <string name="trash_button">Basura</string>
+    <string name="delete">Eliminar Libro</string>
+    <string name="startscreen_settings">Seleccione la pantalla de Inicio</string>
+    <string name="title_activity_zbar_scanner">Escánerde ISBN ZBar</string>
+    <string name="title_activity_zxing_scanner">Escáner de ISBN ZXIng</string>
+    <string name="action_share">Compartir</string>
+    <string name="back_button">Regresa</string>
+    <string name="share_text">Algo que hay que leer el libro: </string>
+
+    <!-- Content Descriptions -->
+    <string name="book_cover">Tapa del libro</string>
+    <string name="book_title">Titulo del libro</string>
+    <string name="book_sub_title">Libro subtítulo</string>
+    <string name="book_about">Acerca de este libro</string>
+    <string name="book_ean">Libro número ISBN</string>
+    <string name="book_authors">Autores de libros</string>
+    <string name="book_categories">Categorías de libros</string>
+    <string name="book_description">Descripción del libro</string>
+    <string name="book_list">Lista de libros</string>
+    <string name="book_info1">Libro info reservar</string>
+    <string name="book_info2">Libro información adicional</string>
+    <string name="book_toolbar">La barra de herramientas</string>
+    <string name="book_icon">Alejandría icono de la aplicación</string>
+    <string name="book_scan">Analiza el número ISBN</string>
+
+    <!-- Scanner Items -->
+    <string name="flash_on">Flash [activado]</string>
+    <string name="flash_off">Flash [desactivado]</string>
+    <string name="auto_focus_on">Enfoque automático [activado]</string>
+    <string name="auto_focus_off">Enfoque automático [desactivado]</string>
+    <string name="formats">Formatos</string>
+    <string name="choose_formats">Elija Formatos</string>
+    <string name="select_camera">Seleccione una cámara</string>
+
+    <!-- Menu Items -->
+    <string name="scan">Escanear/Añadir libro</string>
+    <string name="books">Lista de Libros</string>
+    <string name="about">Acerca de esta aplicación</string>
+
+    <!-- Misc -->
+    <string name="misc_isbn_prefix">978</string>
+    <string name="misc_front_facing">Afrontar</string>
+    <string name="misc_rear_facing">Mirando hacia atrás</string>
+    <string name="misc_camera_id">ID de cámara: </string>
+    <string name="misc_book_detail">Detalle del libro</string>
+    <string name="misc_scan_results">Resultados del análisis</string>
+    <string name="misc_ok">OK</string>
+
+    <string-array name="navDrawerItems">
+        <item>@string/scan</item>
+        <item>@string/books</item>
+        <item>@string/about</item>
+    </string-array>
+
+    <string-array name="navDrawerIcons">
+        <item>@drawable/add_a_book</item>
+        <item>@drawable/list_books</item>
+        <item>@drawable/about</item>
+    </string-array>
+
+    <string-array name="pref_start_options">
+        <item>@string/scan</item>
+        <item>@string/books</item>
+    </string-array>
+
+    <string name="about_text">
+		 Esta aplicación obtiene la información del libro de una API de Google. Todos los títulos, cubren las imágenes y la información del autor provienen de allí.
+         La versión original de esta aplicación fue construida por Sascha Jaschke, y una versión modificada se da a los estudiantes en el programa Udacity Android Nanodegree.
+         Esta versión de Alejandría fue modificada por Lee Hounshell incluir ISBN Escaneo Capacidad (ZXing y Zbar), Imagen y Html Caching, RecyclerView, Diseño de materiales,
+         Localización, Accesibilidad, AppCompat Integración, Navegación Cajón, Estilo, diseño Mirroring, barra de herramientas, código de Lint-gratuito, Deprecation-Correcciones y correcciones de errores.
+    </string>
+
+</resources>

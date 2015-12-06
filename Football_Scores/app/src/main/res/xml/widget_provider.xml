@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/widget_provider_layout"
+    android:previewImage="@drawable/football_widget_preview"
+    android:minWidth="250dp"
+    android:minHeight="180dp"
+    android:updatePeriodMillis="300000"
+    android:resizeMode="horizontal|vertical">
+
+</appwidget-provider>

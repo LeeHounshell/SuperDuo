@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="barqsoft.footballscores">
+
+    <permission android:name="barqsoft.footballscores.PERMISSION" />
+
+    <uses-permission android:name="barqsoft.footballscores.PERMISSION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".FootballScoresApplication"
+        android:supportsRtl="true"
+        android:fullBackupContent="@xml/mybackupscheme"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".ScoresProvider"
+            android:authorities="barqsoft.footballscores"
+            android:readPermission="barqsoft.footballscores.PERMISSION"
+            android:writePermission="barqsoft.footballscores.PERMISSION"
+            android:exported="false"
+            android:grantUriPermissions="true"/>
+
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="barqsoft.footballscores.MainActivity" />
+        </activity>
+
+        <service android:name=".service.MyFetchService" />
+
+        <!-- Widget service -->
+        <service
+            android:name=".service.WidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <receiver
+            android:icon="@drawable/football_widget_preview"
+            android:label="Football Scores Widget"
+            android:name=".FootballScoresWidgetProvider" >
+            <intent-filter >
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider" />
+        </receiver>
+
+    </application>
+
+</manifest>

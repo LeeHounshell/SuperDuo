@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/activity_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_element" />
+
+    <FrameLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        style="@style/frame_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:ignore="MergeRootFrame">
+
+    </FrameLayout>
+
+</LinearLayout>

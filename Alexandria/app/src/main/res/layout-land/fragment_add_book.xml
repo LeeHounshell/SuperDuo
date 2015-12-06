@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    tools:context="it.jaschke.alexandria.AddBook">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            style="@style/add_book_layout_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top|start">
+
+            <LinearLayout
+                android:id="@+id/ean_container"
+                style="@style/add_book_ean_input_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/eanTextInputLayout"
+                    style="@style/add_book_text_input_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/ean"
+                        style="@style/add_book_ean_input_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/book_ean"
+                        tools:hint="@string/input_hint" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageButton
+                    android:id="@+id/scan_button"
+                    style="@style/add_book_scan_button_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/book_scan"
+                    android:src="@drawable/scan_book" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bookTitle"
+                style="@style/add_book_title_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ean_container"
+                android:layout_alignStart="@+id/ean_container"
+                android:layout_below="@+id/ean_container"
+                android:contentDescription="@string/book_title" />
+
+            <TextView
+                android:id="@+id/bookSubTitle"
+                style="@style/add_book_sub_title_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ean_container"
+                android:layout_alignStart="@+id/ean_container"
+                android:layout_below="@+id/bookTitle"
+                android:contentDescription="@string/book_sub_title" />
+
+            <ImageView
+                android:id="@+id/bookCover"
+                style="@style/add_book_cover_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ean_container"
+                android:layout_alignStart="@+id/ean_container"
+                android:layout_below="@+id/bookSubTitle"
+                android:contentDescription="@string/book_cover" />
+
+            <LinearLayout
+                android:id="@+id/auth_and_cat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/add_book_author_category_style"
+                android:layout_alignLeft="@+id/bookCover"
+                android:layout_alignStart="@+id/bookCover"
+                android:layout_alignTop="@+id/bookCover"
+                android:layout_below="@+id/bookSubTitle"
+                android:layout_toEndOf="@+id/bookCover"
+                android:layout_toRightOf="@+id/bookCover"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/authors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/book_authors" />
+
+                <TextView
+                    android:id="@+id/categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/book_categories" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fullBookDesc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/add_book_desc_style"
+                android:layout_below="@+id/auth_and_cat"
+                android:layout_alignLeft="@+id/ean_container"
+                android:layout_alignStart="@+id/ean_container"
+                android:contentDescription="@string/book_description" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/add_book_buttons_style"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="fill_parent"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:contentDescription="@string/trash_button"
+            android:text="@string/trash_button"
+            android:drawableBottom="@drawable/ic_action_discard"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:contentDescription="@string/good_button"
+            android:text="@string/good_button"
+            android:drawableTop="@drawable/ic_action_accept"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="share_button_style" parent="AppTheme">
+        <item name="android:layout_gravity">end</item>
+        <item name="android:gravity">end</item>
+        <item name="android:layout_marginEnd">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:textColor">@color/secondary_text</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:drawableEnd">@android:drawable/ic_menu_share</item>
+        <item name="android:drawableRight">@android:drawable/ic_menu_share</item>
+    </style>
+
+</resources>
