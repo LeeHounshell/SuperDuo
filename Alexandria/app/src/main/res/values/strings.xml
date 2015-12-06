@@ -22,7 +22,6 @@
     <string name="title_activity_zbar_scanner">ISBN ZBar Scanner</string>
     <string name="title_activity_zxing_scanner">ISBN ZXing Scanner</string>
     <string name="action_share">Share</string>
-    <string name="back_button">Go Back</string>
     <string name="share_text">A must read book: </string>
 
     <!-- Content Descriptions -->

@@ -9,6 +9,8 @@ And this is the SuperDuo assignment.
 
 This project productionizes two apps, taking them from a semi-functional state to a production-ready state.
 
+These *Alexandria* and *Football Scores* apps were evaluated by a certified Udacity code reviewer and graded "Exceeds Specifications."
+
 
 ## Alexandria
 

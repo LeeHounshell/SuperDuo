@@ -93,14 +93,6 @@ public class BookDetail extends Fragment implements LoaderManager.LoaderCallback
             }
         });
 
-        // FIXED: properly handle back button in ONE place
-        mRootView.findViewById(R.id.back_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.v(TAG, "back_button: CLICK!");
-                getActivity().onBackPressed();
-            }
-        });
         return mRootView;
     }
 
@@ -197,9 +189,12 @@ public class BookDetail extends Fragment implements LoaderManager.LoaderCallback
         ((TextView) mRootView.findViewById(R.id.fullBookSubTitle)).setText(bookSubTitle);
         ((TextView) mRootView.findViewById(R.id.fullBookDesc)).setText(desc);
 
-        String[] authorsArr = authors.split(",");
-        ((TextView) mRootView.findViewById(R.id.authors)).setLines(authorsArr.length);
-        ((TextView) mRootView.findViewById(R.id.authors)).setText(authors.replace(",", "\n"));
+        // FIXED: null check for authors
+        if (authors != null && authors.length() > 0) {
+            String[] authorsArr = authors.split(",");
+            ((TextView) mRootView.findViewById(R.id.authors)).setLines(authorsArr.length);
+            ((TextView) mRootView.findViewById(R.id.authors)).setText(authors.replace(",", "\n"));
+        }
         if (imgUrl != null && Patterns.WEB_URL.matcher(imgUrl).matches()) {
             new DownloadImage((ImageView) mRootView.findViewById(R.id.fullBookCover)).execute(imgUrl);
         }
@@ -226,6 +221,10 @@ public class BookDetail extends Fragment implements LoaderManager.LoaderCallback
         } else {
             // from: http://stackoverflow.com/questions/32941254/is-there-anything-similar-to-flag-activity-new-document-for-older-apis
             shareIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        }
+        // FIXED: null check for authors
+        if (authors == null || authors.length() == 0) {
+            authors = "unknown";
         }
         // FIXED: share proper book info
         //shareIntent.setType("text/plain");
@@ -319,9 +318,6 @@ public class BookDetail extends Fragment implements LoaderManager.LoaderCallback
         }
         if (mRootView.findViewById(R.id.save_button) != null) {
             mRootView.findViewById(R.id.save_button).setVisibility(View.VISIBLE);
-        }
-        if (mRootView.findViewById(R.id.back_button) != null) {
-            mRootView.findViewById(R.id.back_button).setVisibility(View.VISIBLE);
         }
         if (mRootView.findViewById(R.id.fullBookCover) != null) {
             mRootView.findViewById(R.id.fullBookCover).setVisibility(View.VISIBLE);

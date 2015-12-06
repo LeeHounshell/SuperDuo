@@ -79,19 +79,6 @@
 
             </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/back_button"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/fullBookTitle"
-                android:layout_alignRight="@+id/fullBookTitle"
-                android:contentDescription="@string/back_button"
-                android:src="@drawable/ic_action_undo"
-                android:layout_alignParentTop="true"
-                android:layout_gravity="end|top"
-                android:visibility="invisible" />
-
         </RelativeLayout>
 
     </ScrollView>

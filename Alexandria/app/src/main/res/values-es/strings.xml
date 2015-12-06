@@ -22,7 +22,6 @@
     <string name="title_activity_zbar_scanner">Escánerde ISBN ZBar</string>
     <string name="title_activity_zxing_scanner">Escáner de ISBN ZXIng</string>
     <string name="action_share">Compartir</string>
-    <string name="back_button">Regresa</string>
     <string name="share_text">Algo que hay que leer el libro: </string>
 
     <!-- Content Descriptions -->
