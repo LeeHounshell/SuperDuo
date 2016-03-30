@@ -18,5 +18,6 @@ public class League {
     public static final int PRIMERA_LIGA = 402;
     public static final int BUNDESLIGA3 = 403;
     public static final int EREDIVISIE = 404;
+    public static final int AYSO425 = 425;
 
 }

@@ -39,6 +39,8 @@ class Utilities {
                 return resources.getString(R.string.football_ligue_2);
             case League.EREDIVISIE:
                 return resources.getString(R.string.football_eredivisie);
+            case League.AYSO425:
+                return resources.getString(R.string.football_ayso425);
             default:
                 return resources.getString(R.string.football_unknown) + league_num;
         }

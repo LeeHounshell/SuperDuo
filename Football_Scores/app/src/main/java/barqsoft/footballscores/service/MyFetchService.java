@@ -196,7 +196,7 @@ public class MyFetchService extends IntentService {
                 league = matchData.getJSONObject(LINKS).getJSONObject(SOCCER_SEASON).
                         getString("href");
                 league = league.replace(SEASON_LINK, "");
-                //Log.v(TAG, "checking league=" + league);
+                Log.v(TAG, "checking league=" + league);
                 //This if statement controls which leagues we're interested in the data from.
                 //add leagues here in order to have them be added to the DB.
                 // If you are finding no data in the app, check that this contains all the leagues.
@@ -217,9 +217,10 @@ public class MyFetchService extends IntentService {
                         league.equals(String.valueOf(League.SERIE_A1)) ||
                         league.equals(String.valueOf(League.PRIMERA_LIGA)) ||
                         league.equals(String.valueOf(League.BUNDESLIGA3)) ||
-                        league.equals(String.valueOf(League.EREDIVISIE)))
+                        league.equals(String.valueOf(League.EREDIVISIE)) ||
+                        league.equals(String.valueOf(League.AYSO425)))
                 {
-                    //Log.v(TAG, "--> league match <--");
+                    Log.v(TAG, "--> league match <--");
                     matchId = matchData.getJSONObject(LINKS).getJSONObject(SELF).getString("href");
                     matchId = matchId.replace(MATCH_LINK, "");
                     if (!isReal) {
@@ -243,7 +244,7 @@ public class MyFetchService extends IntentService {
 
                         if (!isReal) {
                             //This if statement changes the dummy data's date to match our current date range.
-                            //Log.v(TAG, "change dummy data");
+                            Log.v(TAG, "change dummy data");
                             Date fragmentdate = new Date(System.currentTimeMillis() + ((i - 2) * 86400000));
                             SimpleDateFormat mformat = new SimpleDateFormat("yyyy-MM-dd", locale);
                             mDate = mformat.format(fragmentdate);
@@ -267,13 +268,14 @@ public class MyFetchService extends IntentService {
                     matchValues.put(DatabaseContract.ScoresTable.LEAGUE_COL, league);
                     matchValues.put(DatabaseContract.ScoresTable.MATCH_DAY, matchDay);
 
-                    //Log.v(TAG, matchId);
-                    //Log.v(TAG, mDate);
-                    //Log.v(TAG, mTime);
-                    //Log.v(TAG, home);
-                    //Log.v(TAG, away);
-                    //Log.v(TAG, homeGoals);
-                    //Log.v(TAG, awayGoals);
+                    Log.v(TAG, matchId);
+                    Log.v(TAG, mDate);
+                    Log.v(TAG, mTime);
+                    Log.v(TAG, home);
+                    Log.v(TAG, away);
+                    Log.v(TAG, homeGoals);
+                    Log.v(TAG, awayGoals);
+                    Log.v(TAG, "------------------------------------------------------------------------------------------");
 
                     values.add(matchValues);
                 }
@@ -289,7 +291,7 @@ public class MyFetchService extends IntentService {
             Log.e(TAG, "insert error here! - e=" + e.getMessage());
         }
 
-        //Log.v(TAG, "processed");
+        Log.v(TAG, "processed");
     }
 
 }

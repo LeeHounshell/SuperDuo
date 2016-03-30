@@ -40,6 +40,7 @@
     <string name="football_ligue_1">League 1</string>
     <string name="football_ligue_2">League 2</string>
     <string name="football_eredivisie">Eredivisie</string>
+    <string name="football_ayso425">AYSO 425</string>
     <string name="football_unknown">Unknown League: #</string>
 
     <!-- football matchday -->
